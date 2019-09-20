@@ -1,0 +1,31 @@
+{
+  "name": "marble-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@marblejs/core": "^2.3.1",
+    "@marblejs/middleware-body": "^2.3.1",
+    "@marblejs/middleware-cors": "^2.3.1",
+    "@marblejs/middleware-io": "^2.3.1",
+    "@marblejs/middleware-jwt": "^2.3.1",
+    "@marblejs/middleware-logger": "^2.3.1",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
